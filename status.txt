@@ -1,0 +1,1 @@
+ft_isprint.c feito, continuar parte 1 from then on.

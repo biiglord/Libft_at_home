@@ -6,15 +6,15 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 13:04:46 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/28 13:24:57 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/10/28 18:37:58 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (str[count])
@@ -22,6 +22,7 @@ int	ft_strlen(char *str)
 	return (count);
 }
 
+// Main function for testing purposes only
 // int	main(void)
 // {
 // 	char	*string = "four";

@@ -1,1 +1,1 @@
-ft_isprint.c feito, continuar parte 1 from then on.
+Continuar no toupper e tolower, devem ser ez

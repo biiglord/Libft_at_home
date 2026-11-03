@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:34:24 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/28 20:52:42 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/03 20:16:11 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <unistd.h>
 # include <stddef.h>
 # include <string.h>
+
+size_t	ft_strlen(const char *str);
 
 typedef struct s_list
 {

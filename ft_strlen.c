@@ -6,13 +6,13 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 13:04:46 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/28 18:37:58 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/03 20:15:52 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	count;
 

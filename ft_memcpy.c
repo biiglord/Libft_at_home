@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 18:13:49 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/28 21:41:45 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/07 01:04:12 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+// Main function for testing purposes only:
 // int	main(void)
 // {
 // 	int	arr1[] = {1, 2, 3};

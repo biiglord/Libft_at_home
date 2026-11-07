@@ -1,2 +1,1 @@
-Next, strncmp and then we tackle memchr and memcmp.
-Almost done. Final boss is atoi... which isn't that hard.
+calloc and strdup next! Part 1 almost done, coragem

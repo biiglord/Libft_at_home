@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:34:24 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/09 23:42:57 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/12 17:09:34 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 # include <stdlib.h>
 
 size_t	ft_strlen(const char *str);
+void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
 
 typedef struct s_list
 {

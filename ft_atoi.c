@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 00:06:57 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/07 00:28:20 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/12 17:53:02 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ int	ft_atoi(const char *nptr)
 	return (result);
 }
 
-int	main(int argc, char **argv)
-{
-	(void)argc;
-	printf("The string you gave me is a number: %d\n", ft_atoi(argv[1]));
-	return (0);
-}
+// // Main function for testing purposes only
+// int	main(int argc, char **argv)
+// {
+// 	(void)argc;
+// 	printf("The string you gave me is a number: %d\n", ft_atoi(argv[1]));
+// 	return (0);
+// }

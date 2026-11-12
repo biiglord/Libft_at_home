@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 16:17:10 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/28 18:27:40 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/12 17:53:16 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
+// Main function for testing purposes only
 // int	main(void)
 // {
 // 	int	arr[] = {1, 2, 3};

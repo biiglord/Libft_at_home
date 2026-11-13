@@ -6,17 +6,15 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:34:24 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/12 19:55:47 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 19:05:41 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stddef.h>
-# include <string.h>
 # include <stdlib.h>
 
 int		ft_atoi(const char *nptr);
@@ -34,6 +32,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *src);
+char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);

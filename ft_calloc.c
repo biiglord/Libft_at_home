@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 23:27:13 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/12 17:53:20 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:21:34 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

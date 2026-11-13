@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 14:25:07 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/05 18:35:36 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:22:15 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

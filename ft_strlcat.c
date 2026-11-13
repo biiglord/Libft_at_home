@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:56:44 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/03 20:22:30 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:23:02 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

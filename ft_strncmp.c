@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 13:47:56 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/05 14:24:49 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:26:52 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

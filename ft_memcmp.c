@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 18:36:01 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/05 20:36:20 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:22:23 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

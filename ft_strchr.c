@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 13:15:42 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/04 19:28:00 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:22:51 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {

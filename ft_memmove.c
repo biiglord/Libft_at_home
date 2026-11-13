@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 15:22:12 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/29 16:43:02 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:22:35 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

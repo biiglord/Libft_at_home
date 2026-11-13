@@ -6,11 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 16:17:10 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/12 17:53:16 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/13 18:21:07 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {

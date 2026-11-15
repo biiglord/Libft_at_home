@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/15 03:22:56 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/15 05:23:11 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/15 05:24:42 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ char	**ft_split(char const *s, char c)
 	return (fill_array(strings, s, c));
 }
 
+// Main function for testing purposes only
 // int	main(void)
 // {
 // 	char	*test1 = "One two THREE four F1V3";

@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 19:09:12 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 19:46:55 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/15 04:45:58 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trm_s1);
 }
 
-int	main(void)
-{
-	char	*str1 = "zHello!x";
-	char	*str2 = "xyz";
-	char	*str3;
+// Main function for testing purposes only
+// int	main(void)
+// {
+// 	char	*str1 = "zHello!x";
+// 	char	*str2 = "xyz";
+// 	char	*str3;
 
-	str3 = ft_strtrim(str1, str2);
-	printf("The trimmed string is: %s\n", str3);
-	if (str3[0] == '\0')
-		printf("That's an empty string!\n");
-	free(str3);
-	return (0);
-}
+// 	str3 = ft_strtrim(str1, str2);
+// 	printf("The trimmed string is: %s\n", str3);
+// 	if (str3[0] == '\0')
+// 		printf("That's an empty string!\n");
+// 	free(str3);
+// 	return (0);
+// }

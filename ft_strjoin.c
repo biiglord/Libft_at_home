@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 18:13:09 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 19:08:29 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/15 04:46:15 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined_str);
 }
 
+// Main function for testing purposes only
 // int	main(void)
 // {
 // 	char	*test1 = "Hello!";

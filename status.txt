@@ -1,1 +1,1 @@
-Vamos atacar o split a seguir! You got this! (Thank you Gemini you've been very helpful)
+ft_split was rough, let's keep going!

@@ -6,11 +6,11 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:18:14 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 18:21:59 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/16 17:11:54 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 // #include <stdio.h>
 
 int	ft_isalpha(int c)

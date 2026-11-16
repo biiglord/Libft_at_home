@@ -6,11 +6,11 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 00:06:57 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 18:20:29 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/16 17:18:25 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 // #include <stdio.h>
 
 int	ft_atoi(const char *nptr)
@@ -35,8 +35,7 @@ int	ft_atoi(const char *nptr)
 		result = result * 10 + (nptr[i] - '0');
 		i++;
 	}
-	result = result * sign;
-	return (result);
+	return ((int)(result * sign));
 }
 
 // // Main function for testing purposes only

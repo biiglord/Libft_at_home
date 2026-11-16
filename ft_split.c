@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/15 03:22:56 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/15 05:24:42 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/16 13:28:25 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,11 +89,11 @@ char	**ft_split(char const *s, char c)
 // Main function for testing purposes only
 // int	main(void)
 // {
-// 	char	*test1 = "One two THREE four F1V3";
+// 	char	*test1 = "One two THREE-four F1V3";
 // 	char	**test2;
 // 	size_t	i;
 
-// 	test2 = ft_split(test1, ' ');
+// 	test2 = ft_split(test1, '-');
 // 	if (!test2)
 // 		return (1);
 // 	i = 0;

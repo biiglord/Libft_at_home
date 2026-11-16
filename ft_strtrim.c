@@ -6,12 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 19:09:12 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/15 04:45:58 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/16 17:08:06 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+// #include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

@@ -6,12 +6,13 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 18:13:49 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 18:22:29 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/18 13:39:47 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 // #include <stdio.h>
+// #include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -46,37 +47,37 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 		printf("%d\n", arr1[i]);
 // 		i++;
 // 	}
-// 	printf("Before the first test, arr2\n");
+// 	printf("\nBefore the first test, arr2\n");
 // 	i = 0;
 // 	while (i < 3)
 // 	{
 // 		printf("%d\n", arr2[i]);
 // 		i++;
 // 	}
-// 	ft_memcpy(arr2, arr1, sizeof(int) * 6);
-// 	memcpy(arr2b, arr1b, sizeof(int) * 6);
-// 	printf("After the first test, arr1\n");
+// 	ft_memcpy(arr2, arr1, sizeof(int) * 3);
+// 	memcpy(arr2b, arr1b, sizeof(int) * 3);
+// 	printf("\nAfter the first test, arr1\n");
 // 	i = 0;
 // 	while (i < 3)
 // 	{
 // 		printf("%d\n", arr1[i]);
 // 		i++;
 // 	}
-// 	printf("After the first test, arr2\n");
+// 	printf("\nAfter the first test, arr2\n");
 // 	i = 0;
 // 	while (i < 3)
 // 	{
 // 		printf("%d\n", arr2[i]);
 // 		i++;
 // 	}
-// 	printf("After the first test, arr1b\n");
+// 	printf("\nAfter the first test, arr1b\n");
 // 	i = 0;
 // 	while (i < 3)
 // 	{
 // 		printf("%d\n", arr1b[i]);
 // 		i++;
 // 	}
-// 	printf("After the first test, arr2b\n");
+// 	printf("\nAfter the first test, arr2b\n");
 // 	i = 0;
 // 	while (i < 3)
 // 	{

@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 19:09:12 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/16 17:08:06 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/18 13:42:24 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 // Main function for testing purposes only
 // int	main(void)
 // {
-// 	char	*str1 = "zHello!x";
+// 	char	*str1 = "zyyHello!xyyy";
 // 	char	*str2 = "xyz";
 // 	char	*str3;
 

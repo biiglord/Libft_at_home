@@ -4,22 +4,20 @@
 
 ## Description
 
-**Libft** is my first C library, created using the knowledge I earned from the 42 teaching curriculum. It's a custom implementation of core C standard library functions (alongside additional string, memory, file-descriptor output, and singly linked list utilities) that is meant to be used in future projects. This library will be useful in the coming future.
+**Libft** is my first C library, created using the knowledge I gained from the 42 teaching curriculum. It's a custom implementation of core C standard library functions (alongside additional string, memory, file-descriptor output, and singly linked list utilities) that is meant to be used in future projects.
 
-This project compiles with cc (and flags: -Wall -Wextra -Werror) into a static library named `libft.a`, using the `ar` command in a `Makefile`. which produces a static library named 'libft.a'. It uses no global variables and complies with the 42 norms. It also makes sure to free all heap memory at the end of both normal functions (the ones that require malloc) and test functions (added as commentary for ease of evaluation/testing).
+This project compiles with cc (and flags: -Wall -Wextra -Werror) into a static library named `libft.a`, using the `ar` command in a `Makefile`. It uses no global variables and complies with the 42 Norm.
+On allocation failure, functions that allocate will free any memory they had already allocated and return NULL.
 
 ---
 
 ## Library Contents
-
 The library consists of three parts, each function prototyped in `libft.h`.
 
 ### Part 1 — Libc Functions 
-These behave exactly the same as the standard `libc` functions, but are prefixed with `ft_`:
+These have the same prototypes and behaviors as the standard `libc` functions (per their man pages), but are prefixed with `ft_`:
 * **Character checks & conversions:**
-`ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-* **Character conversions:**
-`ft_toupper`, `ft_tolower`
+`ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, `ft_tolower`
 * **String manipulation, inspection and conversion:**
 `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_strdup`, `ft_atoi`
 * **Memory operations:**
@@ -28,20 +26,21 @@ These behave exactly the same as the standard `libc` functions, but are prefixed
 
 ### Part 2 — Additional Functions
 Extended utilities not present in standard `libc`:
+
 | **Function** | **Description** |
 | - | - |
-| **`ft_substr`** | Allocates memory and returns a substring from the parameter string `s`. It starts at the index `start` and has a maximum lenght of `len`;
+| **`ft_substr`** | Allocates memory and returns a substring from the parameter string `s`. It starts at the index `start` and has a maximum length of `len`;
 | **`ft_strjoin`** | Allocates memory and returns a new string, which is the concatenation of `s1` and `s2`;
 | **`ft_strtrim`** | Allocates memory and returns a copy of `s1` with the characters from `set` trimmed from the beginning and end of `s1`;
 | **`ft_split`** | Allocates memory and returns an array of strings obtained by splitting `s` using the character `c` as a separator. Each string in the returned array is allocated independently and the array itself is also allocated dynamically;
-| **`ft_itoa`** | Allocates memory and returns a string representing the integer `n` received as an argument (NUMBER, +NUMBER or -NUMBER);
+| **`ft_itoa`** | Allocates memory and returns a string representing the integer `n` received as an argument. `n` can be negative, up to and including INT_MIN;
 | **`ft_strmapi`** | Applies the function `f` to each character of the string `s`, passing its index as the first argument and the character itself as the second. A new string is created (with allocated memory) to store the results from the successive applications of `f`;
 | **`ft_striteri`** | Similar to the previous function, but it applies the function `f` directly to the string `s`, never allocating memory for a different string; 
 | **`ft_putchar_fd`** | Outputs the character `c` to the specified `fd` (file descriptor);
 | **`ft_putstr_fd`** | Outputs the string `s` to the specified `fd` (file descriptor);
 | **`ft_putendl_fd`** | Same as the function above, but followed by a newline;
 | **`ft_putnbr_fd`** | Outputs the integer `n` to the specified `fd` (file descriptor);
-| | |
+
 
 ### Part 3 — Singly Linked List Functions
 Node creation, traversal, modification, and cleanup operating on `t_list`, defined by the following:
@@ -65,7 +64,7 @@ typedef struct s_list
 | **`ft_lstmap`** | Creates a new list from the results of the function *f* applied to each node of the list *lst*, cleaning up on allocation failure with *del*.
 | **`ft_lstdelone`** | Takes a node named *lst* and frees its content (and the node itself) with *del*;
 | **`ft_lstclear`** | Like the function above, but applied to the node *lst* and all of its successors instead of just one node. Sets the list pointer to NULL at the end;
-| | |
+
 
 ### Technical choices
 
@@ -115,4 +114,4 @@ cc -Wall -Wextra -Werror main.c libft.a -o [PROGRAM_NAME]
 
 ### AI Disclosure
 
-Both Gemini (https://gemini.google.com) and Claude (https://claude.com/) were used as AI tutors. None of them provided any code, and they just functioned as tutors who asked questions that I answered to the best of my ability, getting me to figure out the answers to the doubts I had in a more natural way.
+Both Gemini (https://gemini.google.com) and Claude (https://claude.com/) were used as AI tutors. None of them provided any code or direct help (save for helping with/rewording this README); they functioned as teachers/tutors who asked questions that I answered to the best of my ability, getting me to figure out the answers to doubts I had in a more natural way. They also explained concepts that were unclear to me (much like a peer would), reviewed my code (pointing out bugs), suggested edge cases for testing, and validated my decision when my code (which was 100% human-generated) was correct.

@@ -6,12 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 13:29:22 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/16 14:28:31 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/25 21:13:48 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
 static int	len_finder(int n)
 {
@@ -63,13 +63,13 @@ char	*ft_itoa(int n)
 }
 
 // Main function for testing purposes only
-// int	main(void)
-// {
-// 	int		test = -100000;
-// 	char	*string;
+int	main(void)
+{
+	int		test = -2147483648;
+	char	*string;
 
-// 	string = ft_itoa(test);
-// 	printf("The number is: %s\n", string);
-// 	free (string);
-// 	return (0);
-// }
+	string = ft_itoa(test);
+	printf("The number is: %s\n", string);
+	free (string);
+	return (0);
+}

@@ -6,12 +6,12 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 13:29:25 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/25 16:23:33 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/25 18:41:33 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
 t_list	*ft_lstnew(void *content)
 {
@@ -25,7 +25,7 @@ t_list	*ft_lstnew(void *content)
 	return (new_node);
 }
 
-// Main function for testing
+// Main function for testing purposes only
 // int	main(void)
 // {
 // 	char	test[] = "Testing!";
@@ -36,8 +36,8 @@ t_list	*ft_lstnew(void *content)
 // 	if (test_list->next == NULL)
 // 		printf("test_list has a NULL next value!\n");
 // 	if (test_list->content != test2)
-// 		printf("test_list has an original 
-// 			string in its content!\n");
+// 		printf("test_list has an original string in its content!\n");
 // 	printf("That content is: %s\n", (char *)test_list->content);
+// 	ft_lstdelone(test_list, NULL);
 // 	return (0);
 // }

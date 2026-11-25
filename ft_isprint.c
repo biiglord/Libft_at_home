@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:42:30 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/16 17:11:44 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/20 17:30:27 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 int	ft_isprint(int c)
 {
-	if (c < 32 || c == 127)
-		return (0);
-	else
+	if (c >= 32 && c < 127)
 		return (1);
+	else
+		return (0);
 }
 
 // Main function for testing purposes only

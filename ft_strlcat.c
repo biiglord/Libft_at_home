@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:56:44 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 18:23:02 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/20 17:14:06 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,24 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	count;
+	size_t	i;
 	size_t	dest_l;
+	size_t	src_l;
 
-	count = 0;
+	if (!dest && size == 0)
+		return (ft_strlen(src));
 	dest_l = ft_strlen(dest);
+	src_l = ft_strlen(src);
 	if (size <= dest_l)
-		return (size + ft_strlen(src));
-	if (size)
+		return (size + src_l);
+	i = 0;
+	while (src[i] && (dest_l + i) < (size - 1))
 	{
-		while ((dest_l + count) < (size - 1))
-		{
-			dest[count + dest_l] = src[count];
-			if (src[count] == '\0')
-				return (dest_l + count);
-			count++;
-		}
-		dest[dest_l + count] = '\0';
+		dest[i + dest_l] = src[i];
+		i++;
 	}
-	while (src[count] != '\0')
-		count++;
-	return (count + dest_l);
+	dest[dest_l + i] = '\0';
+	return (src_l + dest_l);
 }
 
 // Main function for testing purposes only 

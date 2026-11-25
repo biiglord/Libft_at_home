@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 20:08:45 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/13 18:28:14 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/20 16:55:01 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (i < len && big[i])
 	{
 		j = 0;
-		while ((i + j < len) && big[i + j] && big[i + j] == little[j])
+		while ((i + j < len) && big[i + j] == little[j])
 		{
 			if (little[j + 1] == '\0')
 				return ((char *)&big[i]);

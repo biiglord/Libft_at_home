@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 19:55:43 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/17 22:08:26 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/26 21:24:52 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,97 +38,58 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (n_list);
 }
 
-// // Commented below are tests for all ft_lst functions
-// // del_content frees dynamically allocated node content
-// // used for delone, clear, and map
-// static void	del_content(void *content)
+// Main and helper functions for testing purposes only
+// static void	*adding_ten(void *content)
 // {
-// 	free(content);
-// }
+// 	int	*new_value;
 
-// // print_node prints a node's string content
-// // used for ft_lstiter
-// static void	print_node(void *content)
-// {
-// 	printf("[%s] -> ", (char *)content);
-// }
-
-// // to_upper_inplace uppercases a string in-place
-// // used for ft_lstiter
-// static void	to_upper_inplace(void *content)
-// {
-// 	char	*str;
-// 	int		i;
-
-// 	str = (char *)content;
-// 	i = 0;
-// 	while (str[i])
-// 	{
-// 		str[i] = (char)ft_toupper((unsigned char)str[i]);
-// 		i++;
-// 	}
-// }
-
-// // wrap_brackets duplicates and wraps string in brackets
-// // used for ft_lstmap
-// static void	*wrap_brackets(void *content)
-// {
-// 	char	*orig;
-// 	char	*mapped;
-// 	size_t	len;
-
-// 	orig = (char *)content;
-// 	len = ft_strlen(orig);
-// 	mapped = malloc(len + 3);
-// 	if (!mapped)
+// 	new_value = malloc(sizeof(int));
+// 	if (!new_value)
 // 		return (NULL);
-// 	mapped[0] = '(';
-// 	ft_memcpy(mapped + 1, orig, len);
-// 	mapped[len + 1] = ')';
-// 	mapped[len + 2] = '\0';
-// 	return (mapped);
+// 	*new_value = *(int *)content + 10;
+// 	return (new_value); 
 // }
 
-// // print_list prints the content of the node
-// static void	print_list(const char *label, t_list *lst)
+// static void	*doubling(void *content)
 // {
-// 	printf("%s:\n", label);
-// 	ft_lstiter(lst, print_node);
-// 	printf("NULL (size: %u)\n", (unsigned int)ft_lstsize(lst));
+// 	int	*new_value;
+
+// 	new_value = malloc(sizeof(int));
+// 	if (!new_value)
+// 		return (NULL);
+// 	*new_value = *(int *)content * 2;
+// 	return (new_value);
 // }
 
-// // below is the main function that runs everything above
 // int	main(void)
 // {
-// 	t_list	*head;
-// 	t_list	*mapped;
-// 	t_list	*extra;
+// 	t_list	*test_list;
+// 	t_list	*new_list;
+// 	t_list	*cur_list;
+// 	int		digit;
+// 	int		nmb;
 
-// 	head = NULL;
-// 	printf("--== 1st: ft_lstnew, ft_lstadd_front, ft_lstadd_back ==--\n");
-// 	ft_lstadd_back(&head, ft_lstnew(ft_strdup("middle")));
-// 	ft_lstadd_front(&head, ft_lstnew(ft_strdup("first")));
-// 	ft_lstadd_back(&head, ft_lstnew(ft_strdup("last")));
-// 	print_list("Initial list", head);
-// 	printf("\n--== 2nd: ft_lstlast & ft_lstsize ==--\n");
-// 	printf("Last node content:\n%s\n", (char *)ft_lstlast(head)->content);
-// 	printf("Empty list last/size:\n%p / %u\n",
-// 		(void *)ft_lstlast(NULL), (unsigned int)ft_lstsize(NULL));
-// 	printf("\n--== 3rd: ft_lstiter (in-place modification) ==--\n");
-// 	ft_lstiter(head, to_upper_inplace);
-// 	print_list("After uppercase iter", head);
-// 	printf("\n--== 4th: ft_lstmap (new allocated list) ==--\n");
-// 	mapped = ft_lstmap(head, wrap_brackets, del_content);
-// 	print_list("Original list", head);
-// 	print_list("Mapped list", mapped);
-// 	printf("\n--== 5th: ft_lstdelone (isolated node) ==--\n");
-// 	extra = ft_lstnew(ft_strdup("temporary node"));
-// 	printf("Deleting isolated node: %s\n", (char *)extra->content);
-// 	ft_lstdelone(extra, del_content);
-// 	printf("\n--== 6th: ft_lstclear (full cleanup) ==--\n");
-// 	ft_lstclear(&head, del_content);
-// 	ft_lstclear(&mapped, del_content);
-// 	printf("After clear pointers: head=%p, mapped=%p\n",
-// 		(void *)head, (void *)mapped);
+// 	digit = 8;
+// 	nmb = 14;
+// 	test_list = ft_lstnew(&digit);
+// 	ft_lstadd_back(&test_list, ft_lstnew(&nmb));
+// 	cur_list = test_list;
+// 	while (cur_list)
+// 	{
+// 		printf("This list contains: %d\n", *(int *)cur_list->content);
+// 		cur_list = cur_list->next;
+// 	}
+// 	printf("-= APPLYING FUNCTION =-\n");
+// 	new_list = ft_lstmap(test_list, doubling, free);
+// 	cur_list = new_list;
+// 	while (cur_list)
+// 	{
+// 		printf("This new list contains: %d\n", *(int *)cur_list->content);
+// 		cur_list = cur_list->next;
+// 	}
+// 	printf("Original list still contains: %d and %d\n",
+// 		*(int *)test_list->content, *(int *)test_list->next->content);
+// 	ft_lstclear(&test_list, NULL);
+// 	ft_lstclear(&new_list, free);
 // 	return (0);
 // }

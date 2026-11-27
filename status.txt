@@ -1,1 +1,9 @@
 Espero que consiga explicar as listas como deve ser, desta vez......
+
+Do not forget doxygen, looks like this:
+/**
+ * @brief This fundctions does this
+ *
+ * @param c test 1
+ * @return qualquer coisa
+ */

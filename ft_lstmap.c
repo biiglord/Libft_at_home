@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 19:55:43 by filimigu          #+#    #+#             */
-/*   Updated: 2026/11/26 21:24:52 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/11/27 18:06:37 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 // 	int		digit;
 // 	int		nmb;
 
-// 	digit = 8;
+// 	digit = 9;
 // 	nmb = 14;
 // 	test_list = ft_lstnew(&digit);
 // 	ft_lstadd_back(&test_list, ft_lstnew(&nmb));
